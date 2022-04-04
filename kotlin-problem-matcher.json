@@ -1,0 +1,50 @@
+{
+    "problemMatcher": [
+        {
+            "owner": "kotlin-problem-matcher-file-error",
+            "severity": "error",
+            "pattern": [
+                {
+                    "regexp": "^e:\\s+(.*?):\\s+\\((\\d+),\\s+(\\d*)\\):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "message": 4
+                }
+            ]
+        },
+        {
+            "owner": "kotlin-problem-matcher-file-warning",
+            "severity": "warning",
+            "pattern": [
+                {
+                    "regexp": "^w:\\s+(.*?):\\s+\\((\\d+),\\s+(\\d*)\\):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "message": 4
+                }
+            ]
+        },
+        {
+            "owner": "kotlin-problem-matcher-global-error",
+            "severity": "error",
+            "pattern": [
+                {
+                    "regexp": "^e:\\s+(.*)$",
+                    "message": 1
+                }
+            ]
+        },
+        {
+            "owner": "kotlin-problem-matcher-global-warning",
+            "severity": "warning",
+            "pattern": [
+                {
+                    "regexp": "^w:\\s+(.*)$",
+                    "message": 1
+                }
+            ]
+        }
+    ]
+}

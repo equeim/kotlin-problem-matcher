@@ -1,0 +1,7 @@
+name: Add Kotlin problem matcher
+runs:
+  using: composite
+  steps:
+    - name: Add Kotlin problem matcher
+      shell: bash
+      run: echo '::add-matcher::${{github.action_path}}/kotlin-problem-matcher.json'
