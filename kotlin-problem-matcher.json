@@ -5,7 +5,7 @@
             "severity": "error",
             "pattern": [
                 {
-                    "regexp": "^e:\\s+(.*?):\\s+\\((\\d+),\\s+(\\d*)\\):\\s+(.*)$",
+                    "regexp": "^e: file:\\/\\/(.*):(\\d+):(\\d+) (.*)$",
                     "file": 1,
                     "line": 2,
                     "column": 3,
@@ -18,7 +18,7 @@
             "severity": "warning",
             "pattern": [
                 {
-                    "regexp": "^w:\\s+(.*?):\\s+\\((\\d+),\\s+(\\d*)\\):\\s+(.*)$",
+                    "regexp": "^w: file:\\/\\/(.*):(\\d+):(\\d+) (.*)$",
                     "file": 1,
                     "line": 2,
                     "column": 3,
@@ -31,7 +31,7 @@
             "severity": "error",
             "pattern": [
                 {
-                    "regexp": "^e:\\s+(.*)$",
+                    "regexp": "^e: (.*)$",
                     "message": 1
                 }
             ]
@@ -41,7 +41,7 @@
             "severity": "warning",
             "pattern": [
                 {
-                    "regexp": "^w:\\s+(.*)$",
+                    "regexp": "^w: (.*)$",
                     "message": 1
                 }
             ]
